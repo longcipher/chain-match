@@ -1,0 +1,30 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["dependencies"]
+optimizer = true
+optimizer_runs = 200
+via_ir = true
+
+remappings = [
+    "forge-std/=dependencies/forge-std-1.9.4/src/",
+    "@openzeppelin/=dependencies/openzeppelin-contracts-5.1.0/contracts/"
+]
+
+[dependencies]
+forge-std = "1.9.4"
+openzeppelin-contracts = "5.1.0"
+
+[fmt]
+line_length = 120
+tab_width = 4
+bracket_spacing = true
+
+[fuzz]
+runs = 1000
+max_test_rejects = 65536
+
+[invariant]
+runs = 256
+depth = 15
+fail_on_revert = false

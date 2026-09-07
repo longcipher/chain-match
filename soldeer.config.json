@@ -1,0 +1,6 @@
+{
+  "remappings": {
+    "forge-std/": "forge-std-1.9.4/",
+    "@openzeppelin/": "openzeppelin-contracts-5.1.0/"
+  }
+}
